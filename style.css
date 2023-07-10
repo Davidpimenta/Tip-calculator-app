@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+:root{
+    --space: 'Space Mono', monospace;
+    --Strongcyan: hsl(172, 67%, 45%);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--space);
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    background-color: var(--Lightgrayishcyan);
+    height: 100vh;
+}
+
+/**Header**/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+/**Header**/
+
+/**Main**/
+
+main{
+    padding: 30px 20px;
+    background-color: var(--White);
+    border-radius: 25px 25px 0px 0px;
+}
+
+#bill{
+    font-size: 18px;
+    color: var(--Darkgrayishcyan);
+}
+
+/**Price**/
+
+.div-input{
+    width: 100%;
+    height: 50px;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Verylightgrayishcyan);
+    border-radius: 5px;
+}
+
+#div-erro{
+    border: 2px solid red;
+}
+.div-input:hover{
+    border: 2px solid var(--Strongcyan);
+}
+
+.div-input > label{
+    display: flex;
+}
+
+.input{
+    text-indent: 70%;
+    color: var(--Verydarkcyan);
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: transparent;
+}
+
+.input:focus{
+    outline: 0;
+}
+
+
+
+/**Price**/
+
+/**Select**/
+
+#select{
+    font-size: 18px;
+    color: var(--Darkgrayishcyan);
+}
+
+#tip{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.percentage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    background-color: var(--Verydarkcyan);
+    border: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    height: 50px;
+    width: calc(50% - 20px);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.radio{
+    display: none;
+}
+
+
+
+#custom{
+    color: var(--Verydarkcyan);
+    text-indent: 25%;
+    background-color: var(--Verylightgrayishcyan);
+}
+
+#custom:focus{
+    outline: 0;
+}
+
+#custom:hover{
+    border: 2px solid var(--Strongcyan);
+    color: var(--Verydarkcyan);
+}
+
+.percentage:hover{
+    background-color: var(--Strongcyan);
+    color: var(--Verydarkcyan);
+}
+
+
+/**Select**/
+
+/**Number people**/
+
+
+#number-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#number{
+    font-size: 18px;
+    color: var(--Darkgrayishcyan);
+}
+
+#erro{
+    display: none;
+    font-size: 18px;
+    color: red;
+}
+
+
+#people{
+    text-indent: 80%;
+}
+
+/**Number people**/
+
+
+#result{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    background-color: var(--Verydarkcyan);
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+
+.info-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-result{
+    color: var(--White);
+    font-size: 20px;
+
+
+}
+.title-result p{
+    font-size: 14px;
+    color: var(--Darkgrayishcyan);
+    overflow: hidden;
+}
+
+.result-info{
+    font-size: 30px;
+    color: var(--Strongcyan);
+    width: 100px;
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Oculta o conteúdo excedente */
+    text-overflow: ellipsis; /* Adiciona reticências (...) ao final do texto */
+}
+
+
+#reset{
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--space);
+    cursor: pointer;
+}
+
+.reset-off{
+    color: var(--Grayishcyan);
+    background-color: var(--Darkgrayishcyan);
+}
+
+.reset-on{
+    color: var(--Verydarkcyan);
+    background-color: var(--Strongcyan);
+}
+
+#reset:hover{
+    background-color: var(--Verylightgrayishcyan);
+    color: var(--Strongcyan);
+}
+
+/**Main**/

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Tip calculator app</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="logo" id="logo">
+    </header>
+
+    <main>
+        <div id="left">
+            <h1 id="bill">Bill</h1>
+            <div id="div-price" class="div-input">
+                <label for="price"><img src="images/icon-dollar.svg" alt="Dollar"></label>
+                <input type="number" name="price" id="price" placeholder="00.00" class="input">
+            </div>
+            <h2 id="select">Select Tip %</h2>
+            <div id="tip">
+                <input type="radio" name="percent" id="radio-percent1" class="radio">
+                <input type="radio" name="percent" id="radio-percent2" class="radio">
+                <input type="radio" name="percent" id="radio-percent3" class="radio">
+                <input type="radio" name="percent" id="radio-percent4" class="radio">
+                <input type="radio" name="percent" id="radio-percent5" class="radio">
+                <label for="radio-percent1" class="percentage">5%</label>
+                <label for="radio-percent2" class="percentage">10%</label>
+                <label for="radio-percent3" class="percentage">15%</label>
+                <label for="radio-percent4" class="percentage">25%</label>
+                <label for="radio-percent5" class="percentage">50%</label>
+                <input type="number" name="custom" id="custom" placeholder="Custom" class="percentage">
+            </div>
+            <div id="number-div">
+                <h2 id="number">Number of People</h2>
+                <h2 id="erro">Can't be zero</h2>
+            </div>
+            <div id="div-people" class="div-input">
+                <label for="person">
+                    <img src="images/icon-person.svg" alt="person">
+                </label>
+                <input type="number" name="people" id="people" class="input" placeholder="0">
+            </div>
+        </div>
+
+        <div id="result">
+            <div id="tip-amount" class="info-div">
+                <h1 class="title-result">Tip Amount <p>/ person</p></h1>
+
+                <h1 id="tip-result" class="result-info">$0.00</h1>
+            </div>
+            <div id="total" class="info-div">
+                <h1 class="title-result">Total <p>/ person</p></h1>
+                
+                <h1 id="total-result" class="result-info">$0.00</h1>
+            </div>
+            <button id="reset" class="reset-off">RESET</button>
+        </div>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>

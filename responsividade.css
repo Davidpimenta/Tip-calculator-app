@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 890px) and (min-height: 620px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header{
+        padding: 0;
+        margin-bottom: 25px;
+    }
+    main{
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        width: 80vw;
+
+    }
+
+    #left{
+        position: relative;
+        width: 50%;
+    }
+
+    #result{
+        margin: 0px;
+        width: 50%;
+        height: 100%;
+    }
+
+    .div-input{
+        margin: 10px 0px;
+    }
+
+
+    #tip{
+        margin: 0;
+        margin: 10px 0px;
+        gap: 15px;
+    }
+
+    #result{
+        position: relative;
+    }
+
+    #reset{
+        width: calc(100% - 40px);
+        position: absolute;
+        top: 95%;
+        transform: translate(0%, -100%);
+    }
+}
